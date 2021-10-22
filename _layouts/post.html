@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<article class="post">
+    <h1>{{ page.title }}</h1>
+	<p>{{ page.description }}</p>
+    <span style="color: #666;font-size: 16px;">{% include reading_time.html text=content %}</span>
+
+    <div class="entry">
+        {{ content }}
+    </div>
+
+    <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }} by {{ page.author }}
+    </div>
+
+    <br>
+    <hr>
+
+	<div class="post-nav" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+		<p style="flex: 1 1 0; width: 45%; padding-right: 0.5em;">
+    {% if page.previous.url %}
+    
+			<a href="{{page.previous.url}}">&#8592;&nbsp;{{page.previous.title}}</a>
+    {% endif %}
+  
+		</p>
+		<p style="flex: 1 1 0; width: 45%; padding-left: 0.5em; text-align: right">
+    {% if page.next.url %}
+    
+			<a href="{{page.next.url}}">{{page.next.title}}&nbsp;&#8594;</a>
+    {% endif %}
+  
+		</p>
+	</div>
+
+    {% include disqus.html %}
+</article>

@@ -1,0 +1,3 @@
+{%- assign words = {{include.text}} | number_of_words -%} {%- if words
+< 75 -%} {%- capture read_time -%}1 minute{%- endcapture -%} {%- else -%} {%- capture read_time -%}{{ words | divided_by:75 }} minutes{%- endcapture -%} {%- endif -%} <i class="far fa-clock">
+    </i> {{read_time}} to read

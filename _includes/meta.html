@@ -1,0 +1,20 @@
+    <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <meta name="title" content="{% if page.title %}{{ site.name }} - {{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ site.name }} - {{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+    <meta property="twitter:title" content="{% if page.title %}{{ site.name }} - {{ page.title }}{% else %}{{ site.name }}{% endif %}" />
+
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    {% if page.excerpt %}
+<!--
+    <meta property="og:image" content="https://newcaledoniadevteam.github.io/images/hero-img.png">
+    <meta property="twitter:image" content="https://newcaledoniadevteam.github.io/images/hero-img.png">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">-->
+    {% endif %}
