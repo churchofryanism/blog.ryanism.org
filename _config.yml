@@ -6,10 +6,10 @@
 name: The Ideological Thought on the Church of Ryanism News
 
 # Short bio or description (displayed in the header)
-description: We church speak Ryan
+description: In association with Channel 4 News, we come here to give you entertainment in the name of the True RYAN
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/u/93002709?s=200&v=4
+avatar: https://blog.ryanism.org/images/hero-img.png
 
 #
 # Flags below are optional
@@ -28,7 +28,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon
   twitter: #
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
+  youtube: UCMvOGeh3OZDLG-FljVsGM2w # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
@@ -37,7 +37,7 @@ footer-links:
 disqus: ryanism
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: G-1MT9SFWEBC
+google_analytics: 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
