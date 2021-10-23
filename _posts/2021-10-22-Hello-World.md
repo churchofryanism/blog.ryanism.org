@@ -4,7 +4,7 @@ title: Hello World
 description: Something
 author: Author Number 1
 comments: true
-tags: [web, jekyll]
+tags: sample
 ---
 
 This is a test
