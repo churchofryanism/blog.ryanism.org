@@ -9,9 +9,9 @@ layout: default
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} &mdash; <em>{{ post.date | date: "%-m-%d-%Y" }}</em></a></h1>
 
       <div class="entry">
-          {% if page.tags %}
+          {% if post.tags %}
           (
-          {% for tag in page.tags %}
+          {% for tag in post.tags %}
           <a href="{{ site.baseurl }}/tags#{{ post.tag }}">{{ post.tag}}</a> 
           {% endfor %}
           )
