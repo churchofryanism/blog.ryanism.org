@@ -9,8 +9,8 @@ layout: default
     {% for tag in page.tags %}
     <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
     {% endfor %}
-    {% endif %}
     <br>
+    {% endif %}
     <span style="color: #666;font-size: 16px;">{% include reading_time.html text=content %}</span>
 
     <div class="entry">
