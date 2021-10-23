@@ -4,7 +4,6 @@ layout: default
 
 <article class="post">
     <h1 style="margin: 0px;">{{ page.title }}</h1>
-	<p style="margin: 0px;">{{ page.description }}</p>
     {% if page.tags %}
     [
     {% for tag in page.tags %}
@@ -16,6 +15,7 @@ layout: default
     ]
     <br>
     {% endif %}
+    <p style="margin: 0px;">{{ page.description }}</p>
     <span style="color: #666;font-size: 16px;">{% include reading_time.html text=content %}</span>
 
     <div class="entry">
