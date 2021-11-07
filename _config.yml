@@ -22,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: churchofryanism/
-  instagram: 
+  instagram: the_church_of_ryanism
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -77,7 +77,6 @@ sass:
 plugins:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-sitemap
 
 # Exclude these files from your production _site
 exclude:
