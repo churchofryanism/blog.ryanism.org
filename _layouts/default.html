@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>{% if page.title %}{{ page.title }} – {{ site.name }}{% else %}{{ site.name }} – {{ site.description }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} – {{ site.name }}{% else %}{{ site.name }} – {{ site.description }}{%
+        endif %}</title>
 
     {% include meta.html %}
 
@@ -11,11 +12,14 @@
     <![endif]-->
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+        href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/colormode.css" />
 
     <!--Favicon Information-->
@@ -41,11 +45,11 @@
             background: #121212;
             color: #757575;
         }
-        
+
         .dark-mode .light-only {
             display: none;
         }
-        
+
         html:not(.dark-mode) .dark-only {
             display: none;
         }
@@ -56,8 +60,10 @@
     <div class="wrapper-masthead">
         <div class="container">
             <header class="masthead clearfix">
-                <a href="{{ site.baseurl }}/" class="site-avatar dark-only"><img src="{{ site.baseurl }}/images/hero-img.png" alt="" /></a>
-                <a href="{{ site.baseurl }}/" class="site-avatar light-only"><img src="{{ site.baseurl }}/images/hero-img.light.png" alt="" /></a>
+                <a href="{{ site.baseurl }}/" class="site-avatar dark-only"><img
+                        src="{{ site.baseurl }}/images/hero-img.png" alt="" /></a>
+                <a href="{{ site.baseurl }}/" class="site-avatar light-only"><img
+                        src="{{ site.baseurl }}/images/hero-img.light.png" alt="" /></a>
 
                 <div class="site-info">
                     <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
@@ -68,11 +74,11 @@
                     <a href="{{ site.baseurl }}/">Home</a>
                     <a href="{{ site.baseurl }}/tags">Tags</a>
                     <button id="darkToggle">
-								Switch to
-								<span class="dark-only">light</span>
-								<span class="light-only">dark</span>
-								mode
-							</button>
+                        Switch to
+                        <span class="dark-only">light</span>
+                        <span class="light-only">dark</span>
+                        mode
+                    </button>
                 </nav>
             </header>
         </div>
@@ -91,7 +97,7 @@
     </div>
 
     <script>
-        document.querySelector('#darkToggle').addEventListener('click', function() {
+        document.querySelector('#darkToggle').addEventListener('click', function () {
             var wasDarkMode = localStorage.getItem('darkmode') === '1';
 
             localStorage.setItem('darkmode', wasDarkMode ? '0' : '1');
