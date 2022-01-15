@@ -10,4 +10,4 @@ tags: [ioi, ryan, churchofryanism, ryanism]
 ## **First Post**
 Howdy part'ners, My name is Ryan Saunders and YEh 
 
-![](../images/2021/memecat.jpg)
+![](/images/2021/memecat.jpg)
