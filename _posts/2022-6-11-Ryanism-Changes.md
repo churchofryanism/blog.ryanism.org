@@ -12,4 +12,4 @@ So today I am here to announce that Ryanism.org is going to be shifting towards 
 We have a planned out change to Ryanism. 
 Hope you all will be there to see it.
 
-#COMING SOON...
+# **COMING SOON...**
